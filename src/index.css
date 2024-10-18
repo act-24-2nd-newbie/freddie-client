@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-clear {
+        @apply rounded px-3 py-2.5 hover:cursor-pointer text-content hover:bg-black/[0.08]
+    }
+    .btn-clear-none {
+        @apply rounded px-3 py-2.5 hover:cursor-pointer text-black/[0.2]
+    }
+    .btn-cancel {
+        @apply h-9 w-[90px] rounded border px-3 py-1.5 text-content hover:bg-black/[0.08]
+    }
+    .btn-confirm {
+        @apply h-9 w-[90px] rounded border bg-primary px-3 py-1.5 text-white hover:bg-[#2268C0] disabled:opacity-30
+    }
+    .btn-check {
+        @apply flex h-8 w-[69px] items-center justify-center rounded border px-3 py-1.5 text-[16px] leading-5 text-content
+    }
+    .drop-down {
+        @apply shadow-drop-down-close relative h-10 w-[120px] bg-white hover:cursor-pointer
+    }
+    .btn-drop-down {
+        @apply w-full bg-[center_right_12px] bg-no-repeat px-3 py-2.5 text-left leading-5
+    }
+    .ul-drop-down {
+        @apply shadow-drop-down-open absolute z-10 w-[120px] rounded-b bg-white
+    }
+    .li-drop-down {
+        @apply w-full px-3 py-[10px] text-left
+    }
+    .text-field {
+        @apply flex items-center gap-2 h-8 border-primary
+    }
+    .input-text-field {
+        @apply grow outline-none focus:placeholder:opacity-0 border-b
+    }
+}
